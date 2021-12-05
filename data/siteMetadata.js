@@ -15,6 +15,8 @@ const siteMetadata = {
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
+  artstation: 'https://www.artstation.com/pofay',
+  itchio: 'https://pofay.itch.io/',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
