@@ -22,29 +22,25 @@ But again due to the lack of commitment the blog dried up and sat in the closet 
 
 Now that I'm currently working however I realized that I should've been more active in posting what I was learning, since most of my friends who actively blogged were much more sought out by potential employers.
 
-Most professional resources such as [egghead.io][2] also recommend making a blog for publicity and portfolio purposes.
+Most professional resources such as [egghead.io][2] also recommend making a blog for publicity and portfolio purposes. With those thoughts in mind I figured that I needed to use and edit my [old blog.](https://pofay-blog.vercel.app)
 
-With those thoughts in mind I figured that I needed to use my and edit my [old blog](https://pofay-blog.vercel.app)
+When I tried set it up however, I was swarmed with numerous issues found by `dependabot` and the staleness of settings brought about a lot of headaches, especially due to the node version. I mean it was off for 2 years so there's that.
 
-When I tried bringing it back alive however, I just stopped midway due to the numerous issues found by `dependabot` and the staleness of settings. I mean it was off for 2 years so there's that.
+I could've fixed it but I really wanted a place to write without having the issues of configuration at the moment. I thought I about using another `Gatsby.js` starter but due to it being in the process of updating to V4 I was hesitant due to the extra configurations that will eventually come up.
 
-I could've have fixed it but I really wanted a place to write without having the issues of configuration at the moment.
+It was then I looked up some boilerplates using `react` and came across the [NextJS Tailwind starter blog.][1]
 
-I thought I could use another `Gatsby.js` starter but due to them in the process of updating to V4 I was hesitant due to the extra configurations.
-
-I looked up some boilerplates using `react` and came across the [NextJS Tailwind starter blog][1] and decided to use it for my blogging purposes.
-
-I used it because of the following:
+I decided to make use of it because of the following:
 
 - It has dark mode builtin
 - Uses `react.js`
-- Tight integration with `Vercel`
+- Tight integration with [`Vercel`][4]
 - The code is simple enough to extend.
 - To Learn more about NextJS
 
 The 4th point is very good since in the long run since I can change the overall theme and functionality of this blog.
 
-During the course of the blog's setup I spotted a small issue on its disqus configuration in `Disqus.js`.
+It was not without problems however since during the course of the blog's setup I spotted a small issue on its disqus configuration in `Disqus.js`.
 
 ```js
 // in siteMetadata its disqus configuration is named disqusConfig instead of disqus
@@ -53,7 +49,7 @@ script.setAttribute('data-timestamp', +new Date())
 script.setAttribute('crossorigin', 'anonymous') // Need to comment or remove the line below to fix Disqus CORS issue
 ```
 
-Which should've been:
+Which can be fixed by changing the lines above to this:
 
 ```js
 script.src = 'https://' + siteMetadata.comment.disqusConfig.shortname + '.disqus.com/embed.js'
@@ -77,3 +73,4 @@ I also recently released a [Tower Defense Game in itch.io][3] which will be the 
 [1]: https://github.com/timlrx/tailwind-nextjs-starter-blog
 [2]: https://egghead.io
 [3]: https://pofay.itch.io/retroactive-tower-defense
+[4]: https://vercel.com/
