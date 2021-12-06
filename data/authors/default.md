@@ -1,6 +1,6 @@
 ---
 name: Gian Carlo Gilos
-avatar: /static/images/pofay_2.jpg
+avatar: /static/images/avatar.jpg
 occupation: Junior Software Developer
 company: International Systems Research Co.
 email: gianCarlo.gilos@outlook.com
