@@ -22,9 +22,11 @@ But again due to the lack of commitment the blog dried up and sat in the closet 
 
 Now that I'm currently working however I realized that I should've been more active in posting what I was learning, since most of my friends who actively blogged were much more sought out by potential employers.
 
-With those thoughts in mind I figured that I needed to use my [old blog](https://pofay-blog.vercel.app)
+Most professional resources such as [egghead.io][2] also recommend making a blog for publicity and portfolio purposes.
 
-When I tried bringing it back alive however, I just stopped midway due to the numerous issues found by `dependabot` and the staleness of the node version used. I mean it was off for 2 years so there's that.
+With those thoughts in mind I figured that I needed to use my and edit my [old blog](https://pofay-blog.vercel.app)
+
+When I tried bringing it back alive however, I just stopped midway due to the numerous issues found by `dependabot` and the staleness of settings. I mean it was off for 2 years so there's that.
 
 I could've have fixed it but I really wanted a place to write without having the issues of configuration at the moment.
 
@@ -40,6 +42,40 @@ I used it because of the following:
 - The code is simple enough to extend.
 - To Learn more about NextJS
 
-The 4th point is very good since in the long run when I want I can change the overall theme of this blog.
+The 4th point is very good since in the long run since I can change the overall theme and functionality of this blog.
+
+During the course of the blog's setup I spotted a small issue on its disqus configuration in `Disqus.js`.
+
+```js
+// in siteMetadata its disqus configuration is named disqusConfig instead of disqus
+script.src = 'https://' + siteMetadata.comment.disqus.shortname + '.disqus.com/embed.js'
+script.setAttribute('data-timestamp', +new Date())
+script.setAttribute('crossorigin', 'anonymous') // Need to comment or remove the line below to fix Disqus CORS issue
+```
+
+Which should've been:
+
+```js
+script.src = 'https://' + siteMetadata.comment.disqusConfig.shortname + '.disqus.com/embed.js'
+script.setAttribute('data-timestamp', +new Date())
+```
+
+## What I'll be writing from now on
+
+My old blog/s used to have more posts about hardware using arduino and the raspberry pi.
+
+I'd still write about it if I find any interesting thing my brain cooks up for it.
+
+But recently I'm much more engrossed on the following:
+
+- Game Development using Unity
+- Relearning React and Javascript(new Hooks API for a lot of libraries)
+- A bit of Java (since I'm working as a Java Developer at the moment.)
+
+## Side note
+
+I also recently released a [Tower Defense Game in itch.io][3] which will be the topic of my writings in the next days to come.
 
 [1]: https://github.com/timlrx/tailwind-nextjs-starter-blog
+[2]: https://egghead.io
+[3]: https://pofay.itch.io/retroactive-tower-defense
