@@ -12,7 +12,3 @@ Not that more to say at the moment but I do have these hobbies when I'm not writ
 
 [1]: https://www.linkedin.com/company/international-systems-research-co-/
 [2]: https://www.linkedin.com/in/gian-carlo-gilos-482940121/
-
-## Licence
-
-[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE)
