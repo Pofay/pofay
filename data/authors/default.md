@@ -10,7 +10,7 @@ github: https://github.com/pofay
 artstation: https://www.artstation.com/pofay
 ---
 
-Hello everyone, my name is Gian Carlo I. Gilos. A Software Developer living in the Philippines.
+Hello everyone, my name is Gian Carlo I. Gilos aka `Pofay`. A Software Developer living in the Philippines.
 
 I'm currently working for [International Systems Research (ISR)][1] as a Junior Java Developer.
 
