@@ -1,16 +1,19 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+name: Gian Carlo Gilos
+avatar: /static/images/pofay_2.jpg
+occupation: Junior Software Developer
+company: International Systems Research Co.
+email: gianCarlo.gilos@outlook.com
 twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+linkedin: https://www.linkedin.com/in/gian-carlo-gilos-482940121/
+github: https://github.com/pofay
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Hello everyone, my name is Gian Carlo I. Gilos. A Software Developer living in the Philippines.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+I'm currently working for International Systems Research (ISR) as a Junior Java Developer.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Not that more to say at the moment but I do have these hobbies when I'm not writing games or programs:
+
+- Grappling (From Jiu-jitsu to Wrestling) but due to COVID-19 restrictions is on hold.
+- Playing Computer Games with Friends (Deep Rock Galactic anyone?)
