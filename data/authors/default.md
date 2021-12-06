@@ -14,7 +14,7 @@ Hello everyone, my name is Gian Carlo I. Gilos. A Software Developer living in t
 
 I'm currently working for [International Systems Research (ISR)][1] as a Junior Java Developer.
 
-If you want to see my resume just visit my [LinkedIn](https://www.artstation.com/pofay)
+If you want to see my resume just visit my [LinkedIn][2]
 
 Not that more to say at the moment but I do have these hobbies when I'm not writing games or programs:
 
