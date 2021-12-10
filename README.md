@@ -12,6 +12,11 @@
   - 🌱 Make blogging what I'm learning consistent 📅
   - 🌱 Implementing full-stack apps for portfolio purposes. 📒
 
+<details>
+  <summary>💻 Tools, Libraries and Frameworks</summary>
+  - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+</details>
+
 ---
 
 ### ⚡ Hobbies Include
