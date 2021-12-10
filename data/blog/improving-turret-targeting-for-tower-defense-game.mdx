@@ -10,11 +10,11 @@ layout: PostSimple
 
 # Introduction
 
-Hello everyone `Pofay` here with another article.
+Hello everyone Pofay here with another article.
 
-If you've played my [tower defense game][tower-defense] you might notice one issue that ticks you off (there are a lot of them actually.) but one stands out in terms of gameplay.
+If you've played my [tower defense game][tower-defense] you might notice one issue that ticks you off (there are a lot of them.) but one stands out in terms of gameplay.
 
-The gameplay issue **is how slow the turret changes targets whenever its current target dies**. It sometimes takes a second or two before it can switch targets as you can see in this gif.
+The gameplay issue is **how slow the turret changes targets**. It has a slight delay in changing targets after its current target dies.
 
 ![Slow Target switching](/static/images/td/slow_switching.gif)
 
@@ -22,11 +22,11 @@ This causes low hp targets a chance to slip past the turret and reach the goal. 
 
 # Context
 
-When I started making the game I followed [Brackey's Tutorial on making a Tower Defense Game.][brackeys]
+When I started making this game, I followed [Brackey's Tutorial on making a Tower Defense Game][brackeys]
 
-I followed what the features of the tutorial showed but I wrote the code with my own style.
+I followed most of the tutorial's content but wrote the code with my style.
 
-But there was one thing back then that I couldn't change to fit my standards, which was the algorithm for the turrets to find a target.
+But there was one thing that I couldn't change to fit my standards, which was the algorithm for the turrets to find a target.
 
 ```csharp
 // TurretTargeting.cs
@@ -62,20 +62,20 @@ public Transform CalculateNextTarget(float range)
 
 The main problem with this algorithm is at step 1 and step 2. Provided you have 100-150 enemies in your scene:
 
-- Each tower has to query all enemies in the scene (including the disabled ones)
-- Each tower has to run a distance calculation on all enemies before finding the right target.
+- Each turret has to query all enemies in the scene (including the disabled ones)
+- Each turret needs to run a distance calculation loop on all enemies before finding the right target.
 
-This isn't a major issue if the number of enemies in your scene are static. (not spawned using code)
+This isn't an issue if the number of enemies in your scene is static. (not spawned using code)
 
-But for a scenario like this game where its spawning enemies in intervals (via script) then it just doesn't fit.
+But for a scenario like this game where it's spawning enemies in intervals (via script) then it just doesn't fit.
 
 # The Fix
 
 The fix for the issue was to change how the script queries the enemies.
 
-Instead of querying them all I decided to use `Physics.OverlapSphere` to make the tower only get the enemies near its range.
+Instead of querying them all, I decided to use `Physics.OverlapSphere` to make the tower only get the enemies near its range.
 
-This makes the number of enemies in the distance calculaton loop lower than the previous implementation. (I don't have the exact numbers though.)
+This makes the number of enemies in the distance calculaton loop lower than the previous implementation. (I don't have the exact numbers for this.)
 
 ```csharp
 public Transform CalculateNextTarget(float range)
@@ -108,21 +108,21 @@ public Transform CalculateNextTarget(float range)
 }
 ```
 
-Playing it again and now the turrets will switch targets immediately when its current target dies.
+With that change in the script, the turrets will switch targets immediately when their current target dies.
 
 ![Fast Target switching](/static/images/td/fast_switching.gif)
 
 # Ending thoughts
 
-Although I'm not that versed on performance, I could see its effects if you neglect it on this game.
+Although I'm not that versed in performance, I could see its effects if you neglect it on this game.
 
-This was a lesson for me to take performance into account when writing games and pretty much any type of software that needs it.
+This was a lesson for me to take performance into account when writing games and any software that needs it.
 
-With that said there's still a number of issues in the game that I may yet tackle:
+With that said, there's still several issues in the game that I may yet tackle:
 
 - Rapid instantiation/Destruction of Projectiles (which can be solved by pooling)
-- Alt-tabbing causes screen to move to current mouse position
-- Sound keeps playing even when paused.
+- Alt-tabbing causes the screen to move to the current mouse position
+- Some sounds keeps playing even when the game is paused
 
 And a number of improvements:
 
@@ -131,7 +131,7 @@ And a number of improvements:
 
 Until then, happy coding. You can view the code for the game [here.][github]
 
-_(P.S as of writing this post the fix is live on the [current itch.io page][itchio])_
+_(P.S as of writing this post, the fix is live on the [current itch.io page][itchio])_
 
 [tower-defense]: https://pofay.itch.io/retroactive-tower-defense
 [brackeys]: https://www.youtube.com/watch?v=beuoNuK2tbk&list=PLPV2KyIb3jR4u5jX8za5iU1cqnQPmbzG0
