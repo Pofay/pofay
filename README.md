@@ -1,4 +1,4 @@
-# Hello everyone, my name is Gian Carlo I. Gilos aka `Pofay`.
+# Hello everyone, 👋 I'm Gian Carlo I. Gilos aka `Pofay` 😎.
 
 ---
 
@@ -23,8 +23,10 @@
 ### Github Stats
 
 ![Pofay's Stats][github-stats]
+![Pofay's most used languages][github-languages]
 
 [1]: https://www.linkedin.com/company/international-systems-research-co-/
 [2]: https://www.linkedin.com/in/gian-carlo-gilos-482940121/
 [blog]: https://pofay.vercel.app
 [github-stats]: https://github-readme-stats.vercel.app/api?username=pofay&theme=radical&show_icons=true&count_private=true
+[github-languages]: https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=pofay&theme=solarized_dark
