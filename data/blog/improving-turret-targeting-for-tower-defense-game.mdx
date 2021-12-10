@@ -14,13 +14,11 @@ Hello everyone `Pofay` here with another article.
 
 If you've played my [tower defense game][tower-defense] you might notice one issue that ticks you off (there are a lot of them actually.) but one stands out in terms of gameplay.
 
-The gameplay issue **is how slow the turret changes targets whenever its current target dies**. It sometimes takes a second or two before it can switch targets.
+The gameplay issue **is how slow the turret changes targets whenever its current target dies**. It sometimes takes a second or two before it can switch targets as you can see in this gif.
+
+![Slow Target switching](/static/images/td/slow_switching.gif)
 
 This causes low hp targets a chance to slip past the turret and reach the goal. This is due to the current implementation of the `TurretTargeting.cs` script attached in all turrets.
-
-You can view the code for the game [here.][github]
-
-**Put Gif here**
 
 # Context
 
@@ -110,9 +108,9 @@ public Transform CalculateNextTarget(float range)
 }
 ```
 
-Playing it again and now the turrets switch targets faster when its current target dies.
+Playing it again and now the turrets will switch targets immediately when its current target dies.
 
-**Insert Gif here**
+![Fast Target switching](/static/images/td/fast_switching.gif)
 
 # Ending thoughts
 
@@ -131,7 +129,7 @@ And a number of improvements:
 - Change VFX (since I bought a new pack.)
 - Improve lighting and post-processing
 
-Until then, happy coding.
+Until then, happy coding. You can view the code for the game [here.][github]
 
 _(P.S as of writing this post the fix is live on the [current itch.io page][itchio])_
 
