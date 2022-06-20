@@ -74,7 +74,7 @@
 
 ### ⚡ Hobbies Include
 
-- 🥋 Grappling, but due to COVID-19 restrictions is on hold.
+- 🥋 Grappling
 - 🎮 Playing Computer Games with Friends (Deep Rock Galactic anyone?️)
 - 🎨 3D Modelling in Blender. Currently working towards Animations and Rigging.
 
