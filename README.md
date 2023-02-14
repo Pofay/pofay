@@ -76,7 +76,7 @@
 
 - 🥋 Grappling
 - 🎮 Playing Computer Games with Friends (Deep Rock Galactic anyone?️)
-- 🎨 3D Modelling in Blender. Currently working towards Animations and Rigging.
+- 🎨 3D Modelling in Blender. Mosty practising with making Stylized Art.
 
 ### Github Stats
 
