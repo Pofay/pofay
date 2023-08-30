@@ -5,7 +5,7 @@
 ### About Me
 
 - 🏠 I'm a Software Developer living in the Philippines. 🇵🇭
-- 💼 Currently working for [International Systems Research (ISR)][1] as a Junior Java Developer. ☕
+- 💼 Currently working for [International Systems Research (ISR)][1] as a ~~Junior~~ Medior Java Developer. ☕
 - ✉️ How to reach me: [My blog][blog] or my [LinkedIn][2].
 - 🥅 What I'm currently up to:
   - 🌱 Learning how to make 3D Games in Unity 🎮
